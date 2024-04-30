@@ -11,4 +11,4 @@ Then this simple tool is the right choice for you.
 
 Simply provide the words that you want your kids to practice, or use the default words that we provide.
 
-Have fun spelling!
+Have fun spelling! Access it here: https://riyadhctg.github.io/spellit/
