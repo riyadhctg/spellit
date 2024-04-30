@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spell the Word</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        #gameControls {
+            display: none;
+        }
+
+        #game, #endScreen {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 12px 20px;
+            margin: 15px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 80%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        #spell-alert {
+            color: red;
+            font-weight: bold;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="game">
+        <h1>Spell the Word</h1>
+        <button onclick="startSpelling()">Play</button>
+        <div id="spell-alert"></div>
+        <div id="gameControls">
+            <div>
+                <input type="text" id="userInput" style="width:75%;">
+                <button onclick="repeatWord()" style="width:20%; padding: 12px; background:rgb(156, 111, 52)">Repeat</button>
+            </div>
+            <button onclick="checkSpelling()" style="width: 95%; background:rgb(45, 65, 166)">Check</button>
+            <div>Correct: <span id="correct-count">0</span></div>
+            <div>Incorrect: <span id="incorrect-count">0</span></div>
+            <div>Words left: <span id="words-left">0</span></div>
+        </div>
+        <div id="wordSelectionDiv">
+            <h3>Select words:</h3>
+            <input type="radio" id="defaultWordsButton" name="wordsSelection" value="default" checked>
+            <label for="defaultWordsButton">Default words</label><br>
+            <input type="radio" id="userWordsButton" name="wordsSelection" value="user">
+            <label for="userWordsButton">My own words</label><br>
+            <textarea id="userWordsArea" placeholder="add your words, comma separated" style="display: none; width: 100%; height: 100px;"></textarea>
+        </div>
+    </div>
+    <div id="endScreen" class="hidden">
+        <h1>Results</h1>
+        <div>Correct: <span id="correct-count-end">0</span></div>
+        <div>Incorrect: <span id="incorrect-count-end">0</span></div>
+        <h3>Mispelled words:</h3>
+        <ul id="mispelled-words"></ul>
+        <button onclick="window.location.reload(false)">Start Over</button>
+    </div>
+    
+    <script src="words.js"></script>
+    <script>
+        let shuffledWords = []; 
+        let errorWords = []; 
+        let currentWordIndex = 0;
+        let attemptsLeft = 3; 
+        let correctCount = 0;
+        let incorrectCount = 0;
+        let spellAlert = document.getElementById('spell-alert');
+        
+
+
+        function shuffleArray(array) {
+            let currentIndex = array.length, temporaryValue, randomIndex;
+            while (0 !== currentIndex) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+            return array;
+        }
+
+        function repeatWord() {
+            speak(shuffledWords[currentWordIndex]);
+        }
+
+        function startSpelling(){
+            let wordsSelection = document.querySelector('input[name="wordsSelection"]:checked').value;
+            if (wordsSelection === 'user') {
+                let userInputWords = document.getElementById('userWordsArea').value;
+                if (userInputWords !== "") {
+                    words = userInputWords.split(',').map(word => word.trim());
+                }
+            }
+        
+            shuffledWords = shuffleArray(words.slice());
+            document.getElementById('words-left').textContent = shuffledWords.length;
+            document.querySelector("button[onclick='startSpelling()']").disabled = true;
+            document.getElementById('gameControls').style.display = "block";
+            document.getElementById('wordSelectionDiv').style.display = "none";
+            displayNextWord();
+        }
+
+
+        function checkSpelling() {
+            const userInput = document.getElementById('userInput').value.trim().toLowerCase();
+            const currentWord = shuffledWords[currentWordIndex].toLowerCase();
+            
+            if (userInput === currentWord) {
+                correctCount++;
+                document.getElementById('correct-count').textContent = correctCount;
+                currentWordIndex++;
+                attemptsLeft = 3; 
+                if (currentWordIndex < shuffledWords.length) {
+                    displayNextWord();
+                } else {
+                    endGame();
+                }
+            } else {
+                attemptsLeft--;
+                if (attemptsLeft > 0) {
+                    spellAlert.textContent = 'Misspelled! Attempts left: ' + attemptsLeft;
+                } else {
+                    spellAlert.textContent = 'Misspelled! The correct spelling is: ' + currentWord;
+                    incorrectCount++;
+                    document.getElementById('incorrect-count').textContent = incorrectCount;
+                    errorWords.push(currentWord);
+                    currentWordIndex++;
+                    attemptsLeft = 3; 
+                    if (currentWordIndex < shuffledWords.length) {
+                        setTimeout(displayNextWord, 2000); // Add delay for seeing correct spelling
+                    } else {
+                        endGame();
+                    }
+                }
+            }
+        }
+
+        function displayNextWord() {
+            spellAlert.textContent = '';
+            document.getElementById('userInput').value = '';
+            document.getElementById('words-left').textContent = shuffledWords.length - currentWordIndex;
+            speak(shuffledWords[currentWordIndex]);
+        }
+
+        function speak(word) {
+            if ('speechSynthesis' in window) {
+                const synth = window.speechSynthesis;
+                const utterance = new SpeechSynthesisUtterance(word);
+                synth.speak(utterance);
+            } else {
+                console.error('Speech synthesis not supported in this browser.');
+            }
+        }
+
+        function displayMispelledWords() {
+            const mispelledWordsList = document.getElementById('mispelled-words');
+            mispelledWordsList.innerHTML = '';
+            for (const word of errorWords) {
+                const li = document.createElement('li');
+                li.textContent = word;
+                mispelledWordsList.appendChild(li);
+            }
+        }
+
+        function endGame() {
+            document.getElementById('game').className = 'hidden';
+            document.getElementById('endScreen').className = '';
+            document.getElementById('correct-count-end').textContent = correctCount;
+            document.getElementById('incorrect-count-end').textContent = incorrectCount;
+            displayMispelledWords();
+        }
+
+        window.onload = function() {
+            document.getElementById("defaultWordsButton").onclick = function() {
+                document.getElementById("userWordsArea").style.display = "none";
+            }
+            document.getElementById("userWordsButton").onclick = function() {
+                document.getElementById("userWordsArea").style.display = "block";
+            }
+        };
+    </script>
+</body>
+</html>
