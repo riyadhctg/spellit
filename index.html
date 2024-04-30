@@ -200,7 +200,7 @@
         if ('speechSynthesis' in window) {
             const synth = window.speechSynthesis;
             const utterance = new SpeechSynthesisUtterance(word);
-            utterance.rate = 0.80; // Here you can define your speed rate, normal speed is 1.
+            utterance.rate = 0.65; // Here you can define your speed rate, normal speed is 1.
             synth.speak(utterance);
         } else {
             console.error('Speech synthesis not supported in this browser.');
