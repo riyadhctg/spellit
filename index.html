@@ -126,6 +126,8 @@
                 if (userInputWords !== "") {
                     words = userInputWords.split(',').map(word => word.trim());
                 }
+            } else {
+                words = chooseRandomWords(words, 15)
             }
         
             shuffledWords = shuffleArray(words.slice());
@@ -134,6 +136,22 @@
             document.getElementById('gameControls').style.display = "block";
             document.getElementById('wordSelectionDiv').style.display = "none";
             displayNextWord();
+        }
+
+        function chooseRandomWords(arr, num) {
+            var result = new Array(num),
+                len = arr.length,
+                taken = new Array(len);
+
+            if (num > len)
+                throw new RangeError("chooseRandomWords: more elements taken than available");
+
+            while (num--) {
+                var x = Math.floor(Math.random() * len);
+                result[num] = arr[x in taken ? taken[x] : x];
+                taken[x] = --len in taken ? taken[len] : len;
+            }
+            return result;
         }
 
 
