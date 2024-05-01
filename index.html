@@ -71,7 +71,7 @@
             <div>
                 <input type="text" spellcheck="false" id="userInput" style="width:75%;">
                 <button onclick="repeatWord()" style="width:20%; padding: 12px; background:rgb(156, 111, 52)">Repeat</button>
-                <input type="checkbox" id="peek_checkbox" style="width:15%; padding: 12px;" onchange="peekWord()">
+                <input type="checkbox" id="peek_checkbox" style="width:15%; padding: 12px;" onchange="peekWord()"><label for=""peek_checkbox>Peek 👁</label>
             </div>
             <button onclick="checkSpelling()" style="width: 95%; background:rgb(45, 65, 166)">Check</button>
             <div>Correct: <span id="correct-count">0</span></div>
@@ -107,6 +107,8 @@
         let spellAlert = document.getElementById('spell-alert');
         let userInput = document.getElementById('userInput');
         let peekCheckBox = document.getElementById('peek_checkbox');
+        let maxPeek; // Maximum times a user can peek
+        let peekCount = 0; // Times the user has peeked
 
         
         
@@ -115,11 +117,15 @@
             if(peekCheckBox.checked) {
                 userInput.value = shuffledWords[currentWordIndex];
                 userInput.disabled = true;
+                peekCount++;
+                // Hide checkbox if maxPeek is reached
+                if (peekCount >= maxPeek) {
+                  peekCheckBox.hidden = true;
+                }
             } else {
                 userInput.value = "";
                 userInput.disabled = false;
             }
-
         }
         
 
@@ -141,6 +147,9 @@
         }
 
         function startSpelling(){
+            maxPeek = Math.floor(shuffledWords.length / 2);
+            peekCheckBox.hidden = false;
+            peekCount = 0; // Reset peek count
             let wordsSelection = document.querySelector('input[name="wordsSelection"]:checked').value;
             if (wordsSelection === 'user') {
                 let userInputWords = document.getElementById('userWordsArea').value;
@@ -216,6 +225,7 @@
             document.getElementById('words-left').textContent = shuffledWords.length - currentWordIndex;
             peekCheckBox.checked = false;
             userInput.disabled = false;
+            peekCheckBox.hidden = peekCount >= maxPeek ? true : false;
             speak(shuffledWords[currentWordIndex]);
         }
 
