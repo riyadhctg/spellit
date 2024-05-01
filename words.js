@@ -1,31 +1,31 @@
 /*
 Set A (least difficult):
-"bell", "roar", "noise", "softly", "head", "hungry", "stall", "learn", "help", "then", "tide", "snail", "crab", "same", "most", "float", "raft", "grew", "strong", "life", "flowers", "hot", "wind"
+bell, roar, noise, softly, head, hungry, stall, learn, help, then, tide, snail, crab, same, most, float, raft, grew, strong, life, flowers, hot, wind
 */
 
 /* 
 Set B (more difficult):
-"winked", "toes", "through", "father", "school", "make", "tossed", "turtle", "oysters", "sea", "sun", "tongue", "leaves", "beetle", "flutters", "sunny", "blow"
+winked, toes, through, father, school, make, tossed, turtle, oysters, sea, sun, tongue, leaves, beetle, flutters, sunny, blow
 */
 
 /* 
 Set C (even more difficult):
-"sound", "thought", "problem", "celebrate", "friends", "students", "thank you", "lobster", "mussels", "ocean", "journey", "insects", "branch", "hatches", "feeling", "day"
+sound, thought, problem, celebrate, friends, students, thank you, lobster, mussels, ocean, journey, insects, branch, hatches, feeling, day
 */
 
 /* 
 Set D (significantly more difficult):
-"another", "parents", "replied", "afternoon", "arrived", "spread", "scallops", "beach", "diving", "nectar", "eggshell", "colourful", "vegetables", "sunny"
+another, parents, replied, afternoon, arrived, spread, scallops, beach, diving, nectar, eggshell, colourful, vegetables, sunny
 */
 
 /* 
 Set E (very difficult):
-"suddenly", "wildlife park", "excited", "everyone", "otters", "usually", "habitat", "squirm", "caterpillar", "beautiful", "a pair of wings"
+suddenly, wildlife park, excited, everyone, otters, usually, habitat, squirm, caterpillar, beautiful, a pair of wings
 */
 
 /* 
 Set F (most difficult):
-"a grizzly bear", "rumbling thunder", "seemed to echo", "next week", "let it sizzle", "crack an egg", "pound and knead", "life cycle", "butterfly park", "hot and sunny day"
+a grizzly bear, rumbling thunder, seemed to echo, next week, let it sizzle, crack an egg, pound and knead, life cycle, butterfly park, hot and sunny day
 */
 let words = [
     "bell",
