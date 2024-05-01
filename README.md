@@ -1,24 +1,25 @@
-# Spellit! 🌟
-### Free Automated Spelling Fun for Kids! 📚✨
+# 🚀 Spellit!  🚀 
 
-Looking for a cool way to help your kiddo with spelling? You've found it!
+![GitHub repo size](https://img.shields.io/github/repo-size/riyadhctg/spellit) ![GitHub contributors](https://img.shields.io/github/contributors/riyadhctg/spellit)
 
-**Spellit!** is all about making spelling practice a blast for your little one. 🚀
+**Spellit!** is an exciting and educational web-app aimed at providing you with an interactive platform to improve your spelling skills! It allows you to learn and enjoy the process of practicing challenging spellings. With an easy-to-use, intuitive and vibrant UI, the web app supports custom word lists, real-time feedback on your attempts, and even a 'peek' feature for those extra tricky words!
 
-### What's the Deal? 📝
+Access the live web app [here](http://riyadhctg.github.io/spellit)
 
-- **Hear & Spell:** Let your kiddo listen to the word, then jot it down! It's like a spelling bee, but way more fun.
-  
-- **Oops! Mistake Alert:** No sweat! We'll point out any boo-boos, so your kid can learn as they go.
-  
-- **Track Progress:** Keep an eye on how your kiddo's doing with our handy progress tracker. High-fives for successes and cheers for improvement!
+## What to Expect?
+- Interactive spelling game with varied difficulty levels
+- Limited 'peek' attempts option for a balanced learning
+- Personalized learning experience by customizing your own word list
+- Visually appealing UI, powered with dynamic score updates and feedback
 
-### How It Goes Down 🎮
+## How to Play?
+1. Access the live game through your preferred browser.
+2. Start the game by clicking on the `Play` button. 
+3. Choose your number of peek attempts and select your word list.
+4. Input the correct spelling of the word.
+5. Press the 'Check' button, and the app will tell you whether your spelling is correct or not.
+6. If correct, celebrate (you'll see a firework celebration in the game 🎆), if incorrect, you're informed about the correct spelling.
+7. Track your progress with an on-going live scorecard.
 
-1. **Pick Your Words:** Choose words that match your kid's vibe, or dive into our ready-to-go list.
-  
-2. **Practice Time:** Watch your kiddo tackle each word, getting instant feedback and lots of encouragement.
-  
-3. **Let's Spell!** Ready for some spelling fun? Head over to Spellit! [here](https://riyadhctg.github.io/spellit/) and let the learning party start!
 
-Ready for a spelling adventure? Spellit! is the place to be! ✨
+## 🚀🚀 Happy Spelling! 🚀🚀 
