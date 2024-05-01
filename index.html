@@ -13,6 +13,10 @@
             display: none;
         }
 
+        #peek_checkbox {
+            margin-top: 8px;
+        }
+
         #game, #endScreen {
             max-width: 600px;
             margin: 0 auto;
@@ -67,6 +71,7 @@
             <div>
                 <input type="text" spellcheck="false" id="userInput" style="width:75%;">
                 <button onclick="repeatWord()" style="width:20%; padding: 12px; background:rgb(156, 111, 52)">Repeat</button>
+                <input type="checkbox" id="peek_checkbox" style="width:15%; padding: 12px;" onchange="peekWord()">
             </div>
             <button onclick="checkSpelling()" style="width: 95%; background:rgb(45, 65, 166)">Check</button>
             <div>Correct: <span id="correct-count">0</span></div>
@@ -100,6 +105,22 @@
         let correctCount = 0;
         let incorrectCount = 0;
         let spellAlert = document.getElementById('spell-alert');
+        let userInput = document.getElementById('userInput');
+        let peekCheckBox = document.getElementById('peek_checkbox');
+
+        
+        
+        // function to peek the current word
+        function peekWord() {
+            if(peekCheckBox.checked) {
+                userInput.value = shuffledWords[currentWordIndex];
+                userInput.disabled = true;
+            } else {
+                userInput.value = "";
+                userInput.disabled = false;
+            }
+
+        }
         
 
 
@@ -191,8 +212,10 @@
 
         function displayNextWord() {
             spellAlert.textContent = '';
-            document.getElementById('userInput').value = '';
+            userInput.value = '';
             document.getElementById('words-left').textContent = shuffledWords.length - currentWordIndex;
+            peekCheckBox.checked = false;
+            userInput.disabled = false;
             speak(shuffledWords[currentWordIndex]);
         }
 
