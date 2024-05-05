@@ -26,6 +26,14 @@ suddenly, wildlife park, excited, everyone, otters, usually, habitat, squirm, ca
 /* 
 Set F (most difficult):
 a grizzly bear, rumbling thunder, seemed to echo, next week, let it sizzle, crack an egg, pound and knead, life cycle, butterfly park, hot and sunny day
+
+
+Set G (common mistakes)
+squirm, hatches, caterpillar, beetle, fertiliser, attracted, thorax, flowers, flutters, vegetables, wind flowing, lobsters, mussels, tortoise, scallops, sea urchin, a pod of whales, usually, journey, lifebuoy, seashore, diving board, a shoal of fish, a school of dolphins, rumbling thunder, great white shark, seemed to echo, students, principal, of course, coffee shop, arrived, flipped, excited, let it sizzle, crack an egg, crowded around, stretch out the dough
+
+
+Set H (from dictation)
+park, thrilled, laying the mat, closer look, plants, butterfly, petal, needle-like mouth, sweet nectar, full, flew away, shady tree, enjoying, tasty food, heard, loud shout, nearby, low tide, along the seashore, swimming in the sea, suddenly, hermit crab, recess, horse, wolfed down two plates of rice, burped loudly, English lesson, whole class, round mat, fascinating story, extinct dinosaurs, amazed, during, Racial Harmony Day, wore, colourful, ethnic costume, traditional food, canteen, school hall, food stall, delightful plate, fried noodles, weekends, customers, dirty dishes, sink
 */
 let words = [
     "bell",
