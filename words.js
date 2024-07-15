@@ -34,6 +34,13 @@ squirm, hatches, caterpillar, beetle, fertiliser, attracted, thorax, flowers, fl
 
 Set H (from dictation)
 park, thrilled, laying the mat, closer look, plants, butterfly, petal, needle-like mouth, sweet nectar, full, flew away, shady tree, enjoying, tasty food, heard, loud shout, nearby, low tide, along the seashore, swimming in the sea, suddenly, hermit crab, recess, horse, wolfed down two plates of rice, burped loudly, English lesson, whole class, round mat, fascinating story, extinct dinosaurs, amazed, during, Racial Harmony Day, wore, colourful, ethnic costume, traditional food, canteen, school hall, food stall, delightful plate, fried noodles, weekends, customers, dirty dishes, sink
+
+
+unit 9-1:
+nails, screw, pocket, hammer, magnet, iron bolts, magnetic, newspaper, paper clips, skateboard, cardboard, tournament, competition, a game of cards, a roll of sticky tape
+
+unit9-2:
+rope, tools, paint, team, needle, attract, ladder, shocked, experiment, excitement, tissue, mischievous, a ball of string, a piece of cloth, a reel of thread
 */
 let words = [
     "bell",
