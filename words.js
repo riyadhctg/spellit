@@ -80,17 +80,52 @@ wife, near, race, useful, things, lights, trishaw, training, nodded, disappointe
 Dictation: workshop, repair, customers
 
 
+const spellingWeeksp3T1 = {
+    week3: [
+        "pack", "growl", "shiver", "jacket", "flexed", "muscles", "fearless", "stomach", "trekking", "grumbled",
+        "mountain track", "as fast as light", "stricken with fear", "as timid as a mouse", "like the rocks in a river"
+    ],
+    week5: [
+        "afraid", "dread", "bolted", "scuttled", "rumbled", "invincible", "harmless", "menacing", "nightmare", "discovered",
+        "turned pale", "trembled in fear", "shrieked in terror", "as fierce as a lion", "heart pounded fast"
+    ],
+    week6: [
+        "tusks", "alone", "treetop", "log pile", "roasted", "relieved", "prickles", "crumble", "disbelief", "surprised",
+        "underground", "quick-thinking", "accidentally", "searched frantically", "narrowly missed her"
+    ],
+    week7: [
+        "warts", "timid", "afraid", "frantic", "helpful", "panicked", "scared of", "in horror", "cold feet", "anxiously",
+        "a loud thud", "take a stroll", "badly injured", "crying pitifully", "an enjoyable time together"
+    ],
+    week8: [
+        "bravery", "mimicked", "nightmare", "out of fear", "immediately", "reassuringly", "even though", "reprimanded",
+        "felt proud", "dangerous", "asked in alarm", "filled with relief", "trembled in fear", "shrieked in fright",
+        "barking ferociously"
+    ],
+    week9: [
+        "paint", "glared", "strange", "stood tall", "painting", "sunflower", "smiling at her", "heavy sacks of", "canvas",
+        "photograph", "accompanied", "what a beauty", "what a shame", "mean and selfish", "yellow as the sun"
+    ],
+    week10: [
+        "truth", "mean", "fateful", "teasing", "frighten", "different", "startled", "intelligent", "felt very sad",
+        "chill in the air", "checking it out", "began to laugh", "ran home in tears", "pouring in torrents", "heard a loud knock"
+    ]
+};
+
 */
 let words = [
-    "nails", "screw", "pocket", "hammer", "magnet", "iron bolts", "magnetic", "newspaper", "paper clips", 
-    "skateboard", "cardboard", "tournament", "competition", "a game of cards", "a roll of sticky tape", 
-    "rope", "tools", "paint", "team", "needle", "attract", "ladder", "shocked", "experiment", "excitement", 
-    "tissue", "mischievous", "a ball of string", "a piece of cloth", "a reel of thread", "help", "arrived", 
-    "next time", "hose", "monster", "went pale", "asked", "took out", "gone back", "jungle", "returned", 
-    "said to herself", "waited", "marched", "put on my glasses", "find", "safe", "told", "truck", "green", "family", 
-    "nothing", "chickens", "tomatoes", "dangerous", "drove up", "has eaten", "don't worry", "call for help", 
-    "vegetable garden", "feast", "regularly", "roared furiously", "seldom", "fabulous", "invitation card", "flapped", 
-    "thumped", "enjoyed ourselves", "pranced", "frequently", "time on her hands", "annually", "reluctantly", 
-    "finger-licking good", "gifts", "exciting", "nervous", "midnight", "tasteless", "fireworks", "assemble", 
-    "nonsense", "neighbour", "exclaimed", "goody bag", "joyful", "celebration", "a hearty meal", "a bunch of flowers", "a dog with two tails"
+    "pack","growl","shiver","jacket","flexed","muscles","fearless","stomach","trekking","grumbled","mountain track",
+        "as fast as light","stricken with fear","as timid as a mouse","like the rocks in a river","afraid",
+        "dread","bolted","scuttled","rumbled","invincible","harmless","menacing","nightmare","discovered",
+        "turned pale","trembled in fear","shrieked in terror","as fierce as a lion","heart pounded fast",
+        "tusks","alone","treetop","log pile","roasted","relieved","prickles","crumble","disbelief",
+        "surprised","underground","quick-thinking","accidentally","searched frantically","narrowly missed her",
+        "warts","timid","afraid","frantic","helpful","panicked","scared of","in horror","cold feet","anxiously",
+        "a loud thud","take a stroll","badly injured","crying pitifully","an enjoyable time together","bravery",
+        "mimicked","nightmare","out of fear","immediately","reassuringly","even though","reprimanded","felt proud",
+        "dangerous","asked in alarm","filled with relief","trembled in fear","shrieked in fright","barking ferociously",
+        "paint","glared","strange","stood tall","painting","sunflower","smiling at her","heavy sacks of","canvas","photograph",
+        "accompanied","what a beauty","what a shame","mean and selfish","yellow as the sun","truth","mean","fateful","teasing",
+        "frighten","different","startled","intelligent","felt very sad","chill in the air","checking it out","began to laugh",
+        "ran home in tears","pouring in torrents","heard a loud knock"
     ];
