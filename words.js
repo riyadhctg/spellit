@@ -153,20 +153,66 @@ const spellingWeeksp3T1 = {
     ]
 };
 
+
+p4-term1:
+
+week 1 --
+recipe, sturdy, frosted, clattered, sprinkled, dissolved, refreshing, ingredients, equipment, procedures, ate daintily, turned slushy, screwed tightly, clinked against, vanilla essence, whipping cream, sloshed around, devoured hastily, had eaten our fill, thirstily gulped down
+
+
+week 2 --
+frothy, repeat, drowsy, yoghurt, variation, sprawled, staggered, essentials, exhausted, worthwhile, dog-tired, stifled a yawn, slurped noisily, sniffed hungrily, offered politely, shuffled wearily, sighed blissfully, eyes were bleary, panting for breath, collapsed in exhaustion
+
+
+week 3 --
+sirens, reckless, stretcher, witnessed, pavement, onlookers, astonished, ambulance, passengers, reassuringly, swerve to avoid, seriously injured, breathing heavily, shrieked in fright, cuts and bruises, in the nick of time, brakes screeching, traffic light junction, shuddered with fear, sustained minor injuries
+
+
+week 4 --
+gazed, gaped, baffled, assure, examine, delicate, stressed, volunteer, sensitive, travelling, specialise, fortunately, escalators, experience, bewildered, at a glance, testimonial, inquisitively, responsibility, bursting with curiosity
+
+
+week 5 --
+leisure, grooves, infection, attention, downcast, squeaked, treatment, exhausted, paralysed, discomfort, resilience, newsletter, pedestrians, accidentally, miraculously, sat patiently, mischievous, taken by surprise, administered first aid, caught a quick glimpse
+
+
+week 6 --
+athletes, accuracy, repetition, audience, whispered, screeched, participate, opponents, difference, reluctantly, courageous, disappointed, achievement, accommodate, inclined ramp, apologetically, representatives, as swift as light, quickened her steps, in the blink of an eye​​​​​​​​​​​​​​​​
+
+
+week 7 --
+lost his balance, dragged her feet, took to his heels, puffing and panting, fell with a loud thud, heart swelled in relief, erupted into shouts of joy, fled, crept, sprinted, scampered, interlocking, impairments, embarrassed, accomplished, energetically, slipped away, fascinated by, burst of speed, tiptoed quietly​​​​​​​​​​​​​​​​
+
+
 */
 let words = [
-    "pack","growl","shiver","jacket","flexed","muscles","fearless","stomach","trekking","grumbled","mountain track",
-        "as fast as light","stricken with fear","as timid as a mouse","like the rocks in a river","afraid",
-        "dread","bolted","scuttled","rumbled","invincible","harmless","menacing","nightmare","discovered",
-        "turned pale","trembled in fear","shrieked in terror","as fierce as a lion","heart pounded fast",
-        "tusks","alone","treetop","log pile","roasted","relieved","prickles","crumble","disbelief",
-        "surprised","underground","quick-thinking","accidentally","searched frantically","narrowly missed her",
-        "warts","timid","afraid","frantic","helpful","panicked","scared of","in horror","cold feet","anxiously",
-        "a loud thud","take a stroll","badly injured","crying pitifully","an enjoyable time together","bravery",
-        "mimicked","nightmare","out of fear","immediately","reassuringly","even though","reprimanded","felt proud",
-        "dangerous","asked in alarm","filled with relief","trembled in fear","shrieked in fright","barking ferociously",
-        "paint","glared","strange","stood tall","painting","sunflower","smiling at her","heavy sacks of","canvas","photograph",
-        "accompanied","what a beauty","what a shame","mean and selfish","yellow as the sun","truth","mean","fateful","teasing",
-        "frighten","different","startled","intelligent","felt very sad","chill in the air","checking it out","began to laugh",
-        "ran home in tears","pouring in torrents","heard a loud knock"
-    ];
+  "recipe", "sturdy", "frosted", "clattered", "sprinkled", "dissolved", "refreshing", "ingredients", "equipment", "procedures",
+  "ate daintily", "turned slushy", "screwed tightly", "clinked against", "vanilla essence", "whipping cream",
+  "sloshed around", "devoured hastily", "had eaten our fill", "thirstily gulped down",
+
+  "frothy", "repeat", "drowsy", "yoghurt", "variation", "sprawled", "staggered", "essentials", "exhausted", "worthwhile",
+  "dog-tired", "stifled a yawn", "slurped noisily", "sniffed hungrily", "offered politely", "shuffled wearily",
+  "sighed blissfully", "eyes were bleary", "panting for breath", "collapsed in exhaustion",
+
+  "sirens", "reckless", "stretcher", "witnessed", "pavement", "onlookers", "astonished", "ambulance", "passengers",
+  "reassuringly", "swerve to avoid", "seriously injured", "breathing heavily", "shrieked in fright",
+  "cuts and bruises", "in the nick of time", "brakes screeching", "traffic light junction",
+  "shuddered with fear", "sustained minor injuries",
+
+  "gazed", "gaped", "baffled", "assure", "examine", "delicate", "stressed", "volunteer", "sensitive", "travelling",
+  "specialise", "fortunately", "escalators", "experience", "bewildered", "at a glance", "testimonial",
+  "inquisitively", "responsibility", "bursting with curiosity",
+
+  "leisure", "grooves", "infection", "attention", "downcast", "squeaked", "treatment", "exhausted", "paralysed",
+  "discomfort", "resilience", "newsletter", "pedestrians", "accidentally", "miraculously", "sat patiently",
+  "mischievous", "taken by surprise", "administered first aid", "caught a quick glimpse",
+
+  "athletes", "accuracy", "repetition", "audience", "whispered", "screeched", "participate", "opponents",
+  "difference", "reluctantly", "courageous", "disappointed", "achievement", "accommodate", "inclined ramp",
+  "apologetically", "representatives", "as swift as light", "quickened her steps", "in the blink of an eye",
+
+  "lost his balance", "dragged her feet", "took to his heels", "puffing and panting", "fell with a loud thud",
+  "heart swelled in relief", "erupted into shouts of joy", "fled", "crept", "sprinted", "scampered",
+  "interlocking", "impairments", "embarrassed", "accomplished", "energetically", "slipped away",
+  "fascinated by", "burst of speed", "tiptoed quietly"
+];
