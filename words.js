@@ -184,6 +184,25 @@ week 7 --
 lost his balance, dragged her feet, took to his heels, puffing and panting, fell with a loud thud, heart swelled in relief, erupted into shouts of joy, fled, crept, sprinted, scampered, interlocking, impairments, embarrassed, accomplished, energetically, slipped away, fascinated by, burst of speed, tiptoed quietly​​​​​​​​​​​​​​​​
 
 
+
+
+p4-term2:
+
+Term 2 Week 3:
+boldly, warily, replied, roamed, observe, integrity, reflection, desperate, crestfallen, ecosystem, independent, slipped away, awoken, climate change, caught sight of, wailed in sorrow, sky was overcast, browsed through, thirst for knowledge, plucked the courage, trembling with excitement, investigate, peered, causing
+
+Term 2 Week 4:
+fierce, believe, grateful, occasion, separate, watchful, incredible, restaurant, stationery, successful, intelligence, adventurous, immediately, communicate, yelped in pain, howled in agony, face lit up with joy, in the blink of an eye, in a disorderly manner, admitted to his mistake, windowpane, culprits, responsible
+
+Term 2 Week 5:
+victory, contest, opposite, activities, swimming, practising, scrambled, whispered, organising, compassion, remorseful, devastated, accomplish, accidentally, achievements, fair and square, bundle of nerves, eyes brimmed with tears, fingers were tightly crossed, punched the air with delight, smithereens, butterflies in his stomach, sternly
+
+Term 2 Week 6:
+fiery, deceive, grasped, mumbled, saddened, dribbling, exclaimed, competitor, determined, questioned, trustworthy, description, felt relieved, over-confident, remained silent, turned a deaf ear, seething with rage, burst into a flood of tears, rubbed her eyes in surprise, glared with dagger-like eyes, apologetically, wrinkle
+
+Term 2 Week 9:
+blame, shame, chided, culprit, accused, repentant, confessed, suggested, apologetic, obstinately, mischievous, in a dilemma, terribly sorry, steeped in guilt, a dishonest deed, could barely speak, shivering with fear, nervous and fidgety, heart was beating fast, faced the consequences, squeaked, summoned, misery​​​​​​​​​​​​​​​​
+
 */
 let words = [
   "recipe", "sturdy", "frosted", "clattered", "sprinkled", "dissolved", "refreshing", "ingredients", "equipment", "procedures",
