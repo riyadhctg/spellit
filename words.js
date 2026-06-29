@@ -203,7 +203,9 @@ fiery, deceive, grasped, mumbled, saddened, dribbling, exclaimed, competitor, de
 Term 2 Week 9:
 blame, shame, chided, culprit, accused, repentant, confessed, suggested, apologetic, obstinately, mischievous, in a dilemma, terribly sorry, steeped in guilt, a dishonest deed, could barely speak, shivering with fear, nervous and fidgety, heart was beating fast, faced the consequences, squeaked, summoned, misery​​​​​​​​​​​​​​​​
 
-
+---
+p4-t3
+---
 Week 2
 thrill, chided, swimming, expedition, persevered, comprehend, wolfed down, adventurous, a bumpy ride, a big appetite, made it to safety, a vivid imagination, face lit up in delight, curiosity burned inside me, accommodate, acknowledge, argument, believe, calendar, cemetery
 "thrill", "chided", "swimming", "expedition", "persevered", "comprehend", "wolfed down", "adventurous", "a bumpy ride", "a big appetite", "made it to safety", "a vivid imagination", "face lit up in delight", "curiosity burned inside me", "accommodate", "acknowledge", "argument", "believe", "calendar", "cemetery"
