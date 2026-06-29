@@ -227,6 +227,44 @@ livid, hasty, stunned, separate, an earful, remember, on tenterhooks, unfortunat
 
 
 */
+
+const words_p4_t3_2026 = {
+  week2: [
+    "thrill", "chided", "swimming", "expedition", "persevered", "comprehend", "wolfed down", "adventurous",
+    "a bumpy ride", "a big appetite", "made it to safety", "a vivid imagination", "face lit up in delight",
+    "curiosity burned inside me", "accommodate", "acknowledge", "argument", "believe", "calendar", "cemetery"
+  ],
+  week3: [
+    "roam", "gauge", "lantern", "harass", "trekking", "lamented", "campground", "wilderness", "stomachache",
+    "well-disciplined", "insect repellent", "a convenient spot", "whistled a merry tune", "blood-curdling scream",
+    "sauntered into the forest", "conscience", "definitely", "embarrass", "fluorescent", "searched exasperatedly"
+  ],
+  week4: [
+    "canoe", "wander", "unease", "navigate", "snarling", "convinced", "hysterically", "disappeared",
+    "apprehensive", "no time to spare", "paralysed with fear", "from the corner of his eye",
+    "anxiety charged through my veins", "frantic thoughts raced through my mind", "independent", "jewellery",
+    "knowledge", "leisure", "millennium", "necessary"
+  ],
+  week5: [
+    "explore", "restless", "achieve", "flustered", "frantically", "permanent", "in record time", "mind was blank",
+    "peals of laughter", "dangerous activity", "legs turned into jelly", "chill ran down my spine",
+    "hands turned cold and clammy", "body tingled with enthusiasm", "occasion", "parallel", "questionnaire",
+    "schedule", "separate", "tomorrow"
+  ],
+  week6: [
+    "clumsy", "discover", "treasure", "torchlight", "challenge", "struggled", "distracted", "persuaded",
+    "dark and spooky", "broke into a run", "terror gripped my heart", "eerie shadows on the ground",
+    "blood drained from his face", "stomach did a quick somersault", "vacuum", "weird", "yacht", "beginning",
+    "broccoli", "buoyant"
+  ],
+  week8: [
+    "livid", "hasty", "stunned", "separate", "an earful", "remember", "on tenterhooks", "unfortunately",
+    "uncanny silence", "burst into laughter", "chilly gust of wind", "giggled in amusement",
+    "stood there in disbelief", "nerve-wrecking experience", "column", "concede", "congratulate", "conscious",
+    "consensus", "controversy"
+  ]
+};
+
 let words = [
   "recipe", "sturdy", "frosted", "clattered", "sprinkled", "dissolved", "refreshing", "ingredients", "equipment", "procedures",
   "ate daintily", "turned slushy", "screwed tightly", "clinked against", "vanilla essence", "whipping cream",

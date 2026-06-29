@@ -95,8 +95,8 @@
             <label>Number of Peeks Allowed:</label>
             <select id="numPeeksSelect">
                 <option value="0">0</option>
-                <option value="5">5</option>
-                <option selected value="10">10</option>
+                <option selected value="5">5</option>
+                <option value="10">10</option>
                 <option value="20">20</option>
                 <option value="30">30</option>
                 <option value="999999">Unlimited</option>
@@ -120,7 +120,9 @@
         </div>
         <div id="wordSelectionDiv">
             <h3>Select words:</h3>
-            <input type="radio" id="defaultWordsButton" name="wordsSelection" value="default" checked>
+            <input type="radio" id="p4t32026WordsButton" name="wordsSelection" value="p4-t3-2026" checked>
+            <label for="p4t32026WordsButton">P4 T3 2026</label><br>
+            <input type="radio" id="defaultWordsButton" name="wordsSelection" value="default">
             <label for="defaultWordsButton">Default words</label><br>
             <input type="radio" id="userWordsButton" name="wordsSelection" value="user">
             <label for="userWordsButton">My own words</label><br>
@@ -222,6 +224,8 @@
                 if (userInputWords !== "") {
                     words = userInputWords.split(',').map(word => word.trim());
                 }
+            } else if (wordsSelection === 'p4-t3-2026') {
+                words = getP4T32026WordsForDate(new Date());
             } else {
                 words = chooseRandomWords(words, 15)
             }
@@ -248,6 +252,19 @@
                 taken[x] = --len in taken ? taken[len] : len;
             }
             return result;
+        }
+
+        function getP4T32026WordsForDate(date) {
+            const startDate = new Date(2026, 5, 29);
+            const dateOnly = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+            const daysSinceStart = Math.floor((dateOnly - startDate) / 86400000);
+            const calculatedWeek = Math.max(2, Math.floor((daysSinceStart - 1) / 7) + 2);
+            const availableWeeks = Object.keys(words_p4_t3_2026)
+                .map(week => Number(week.replace('week', '')))
+                .sort((a, b) => a - b);
+            const selectedWeek = availableWeeks.find(week => week >= calculatedWeek) || availableWeeks[availableWeeks.length - 1];
+
+            return words_p4_t3_2026[`week${selectedWeek}`].slice();
         }
 
 
@@ -328,11 +345,12 @@
         }
 
         window.onload = function() {
-            document.getElementById("defaultWordsButton").onclick = function() {
-                document.getElementById("userWordsArea").style.display = "none";
-            }
-            document.getElementById("userWordsButton").onclick = function() {
-                document.getElementById("userWordsArea").style.display = "block";
+            const wordSelectionButtons = document.querySelectorAll('input[name="wordsSelection"]');
+            for (const button of wordSelectionButtons) {
+                button.onclick = function() {
+                    const isUserWords = document.getElementById("userWordsButton").checked;
+                    document.getElementById("userWordsArea").style.display = isUserWords ? "block" : "none";
+                }
             }
         };
     </script>
