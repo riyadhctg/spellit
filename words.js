@@ -203,6 +203,27 @@ fiery, deceive, grasped, mumbled, saddened, dribbling, exclaimed, competitor, de
 Term 2 Week 9:
 blame, shame, chided, culprit, accused, repentant, confessed, suggested, apologetic, obstinately, mischievous, in a dilemma, terribly sorry, steeped in guilt, a dishonest deed, could barely speak, shivering with fear, nervous and fidgety, heart was beating fast, faced the consequences, squeaked, summoned, misery​​​​​​​​​​​​​​​​
 
+
+Week 2
+thrill, chided, swimming, expedition, persevered, comprehend, wolfed down, adventurous, a bumpy ride, a big appetite, made it to safety, a vivid imagination, face lit up in delight, curiosity burned inside me, accommodate, acknowledge, argument, believe, calendar, cemetery
+"thrill", "chided", "swimming", "expedition", "persevered", "comprehend", "wolfed down", "adventurous", "a bumpy ride", "a big appetite", "made it to safety", "a vivid imagination", "face lit up in delight", "curiosity burned inside me", "accommodate", "acknowledge", "argument", "believe", "calendar", "cemetery"
+Week 3
+roam, gauge, lantern, harass, trekking, lamented, campground, wilderness, stomachache, well-disciplined, insect repellent, a convenient spot, whistled a merry tune, blood-curdling scream, sauntered into the forest, conscience, definitely, embarrass, fluorescent, searched exasperatedly
+"roam", "gauge", "lantern", "harass", "trekking", "lamented", "campground", "wilderness", "stomachache", "well-disciplined", "insect repellent", "a convenient spot", "whistled a merry tune", "blood-curdling scream", "sauntered into the forest", "conscience", "definitely", "embarrass", "fluorescent", "searched exasperatedly"
+Week 4
+canoe, wander, unease, navigate, snarling, convinced, hysterically, disappeared, apprehensive, no time to spare, paralysed with fear, from the corner of his eye, anxiety charged through my veins, frantic thoughts raced through my mind, independent, jewellery, knowledge, leisure, millennium, necessary
+"canoe", "wander", "unease", "navigate", "snarling", "convinced", "hysterically", "disappeared", "apprehensive", "no time to spare", "paralysed with fear", "from the corner of his eye", "anxiety charged through my veins", "frantic thoughts raced through my mind", "independent", "jewellery", "knowledge", "leisure", "millennium", "necessary"
+Week 5
+explore, restless, achieve, flustered, frantically, permanent, in record time, mind was blank, peals of laughter, dangerous activity, legs turned into jelly, chill ran down my spine, hands turned cold and clammy, body tingled with enthusiasm, occasion, parallel, questionnaire, schedule, separate, tomorrow
+"explore", "restless", "achieve", "flustered", "frantically", "permanent", "in record time", "mind was blank", "peals of laughter", "dangerous activity", "legs turned into jelly", "chill ran down my spine", "hands turned cold and clammy", "body tingled with enthusiasm", "occasion", "parallel", "questionnaire", "schedule", "separate", "tomorrow"
+Week 6
+clumsy, discover, treasure, torchlight, challenge, struggled, distracted, persuaded, dark and spooky, broke into a run, terror gripped my heart, eerie shadows on the ground, blood drained from his face, stomach did a quick somersault, vacuum, weird, yacht, beginning, broccoli, buoyant
+"clumsy", "discover", "treasure", "torchlight", "challenge", "struggled", "distracted", "persuaded", "dark and spooky", "broke into a run", "terror gripped my heart", "eerie shadows on the ground", "blood drained from his face", "stomach did a quick somersault", "vacuum", "weird", "yacht", "beginning", "broccoli", "buoyant"
+Week 8
+livid, hasty, stunned, separate, an earful, remember, on tenterhooks, unfortunately, uncanny silence, burst into laughter, chilly gust of wind, giggled in amusement, stood there in disbelief, nerve-wrecking experience, column, concede, congratulate, conscious, consensus, controversy
+"livid", "hasty", "stunned", "separate", "an earful", "remember", "on tenterhooks", "unfortunately", "uncanny silence", "burst into laughter", "chilly gust of wind", "giggled in amusement", "stood there in disbelief", "nerve-wrecking experience", "column", "concede", "congratulate", "conscious", "consensus", "controversy"
+
+
 */
 let words = [
   "recipe", "sturdy", "frosted", "clattered", "sprinkled", "dissolved", "refreshing", "ingredients", "equipment", "procedures",
